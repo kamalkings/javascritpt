@@ -11,6 +11,8 @@ var blockVar = "I'm a block-scoped var";
 let blockLet = "I'm a block-scoped let";
 const blockConst = "I'm a block-scoped const";
 }
-for(var i=0;i<5;i++){
-console.log(i);
+
+
+for (let i = 1; i <= 5; i++) {
+ console.log(i);
 }
