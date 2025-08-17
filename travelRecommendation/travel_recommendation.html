@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravelBloom</title>
+    <link rel="stylesheet" href="travelRecommendation.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <!-- Optional Website Logo -->
+        <img src="images/logo.png" alt="TravelBloom logo" height="32">
+        <span class="site-name">TravelBloom</span>
+    </div>
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <form id="searchForm" class="search-form" onsubmit="return false;">
+        <input type="text" id="searchInput" placeholder="Search recommendations...">
+        <button type="button" id="searchBtn">Search</button>
+        <button type="button" id="resetBtn">Reset</button>
+    </form>
+</nav>
+
+<!-- Home Page -->
+<section id="homeSection" class="home-bg">
+    <div class="intro">
+        <h1>Welcome to TravelBloom</h1>
+        <p>Your ultimate source for handpicked travel recommendations.<br>
+            Find beautiful beaches, ancient temples, and amazing countries for your next adventure!</p>
+    </div>
+    <div class="social-icons">
+        <a href="#" title="Instagram"><img src="images/instagram.png" alt="Instagram" height="32"></a>
+        <a href="#" title="Facebook"><img src="images/facebook.png" alt="Facebook" height="32"></a>
+        <a href="#" title="Twitter"><img src="images/twitter.png" alt="Twitter" height="32"></a>
+    </div>
+    <div id="results"></div>
+</section>
+
+<!-- About Us Page -->
+<section id="aboutSection" class="hidden">
+    <h2>About Us</h2>
+    <p>TravelBloom is a modern travel tech company helping explorers find the perfect destination.</p>
+    <h3>Our Team</h3>
+    <div class="team">
+        <div class="member">
+            <span class="team-name">Jane Doe</span><br>
+            <span class="team-role">Founder & CEO</span>
+        </div>
+        <div class="member">
+            <span class="team-name">John Smith</span><br>
+            <span class="team-role">Lead Developer</span>
+        </div>
+        <div class="member">
+            <span class="team-name">Emily Lee</span><br>
+            <span class="team-role">Designer</span>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Page -->
+<section id="contactSection" class="hidden">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label>Name:<br><input type="text" name="name" required></label><br>
+        <label>Email:<br><input type="email" name="email" required></label><br>
+        <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<script src="travel_recommendation.js"></script>
+</body>
+</html>
